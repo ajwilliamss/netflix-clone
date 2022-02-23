@@ -1,6 +1,6 @@
 # Netflix Clone
 
-This is a netflix clone built using React and the TMDB API.
+Netflix clone built using React and the TMDB API.
 
 The application features a home, login, register, and netflix page.
 
@@ -14,7 +14,7 @@ The register form implements form validation.
 
 # View the site here:
 
-[Netlify Link]()
+[Netlify Link](https://ajwilliams-netflix-clone.netlify.app/)
 
 # How to use the app:
 
