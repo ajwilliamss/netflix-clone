@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a netflix clone built using React and the TMDB API.
 
-## Available Scripts
+The application features a home, login, register, and netflix page.
 
-In the project directory, you can run:
+The user can browse shows and movies on the netflix clone and upon clicking an image, they will be shown a trailer.
 
-### `npm start`
+All the titles are pulled from the API and when the user scrolls, the navigation bar changes colour.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A slider can be used to scroll through the items in each row.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The register form implements form validation.
 
-### `npm test`
+# View the site here:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Netlify Link]()
 
-### `npm run build`
+# How to use the app:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Click on the appropriate button to go to either the login or register page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The netflix page can be accessed from the sign in page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Scroll through the page to see what shows or movies the api delivers.
 
-### `npm run eject`
+- Hover and click on a movie to preview the trailer.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Technologies & libraries used:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- SASS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- API Documentation: https://developers.themoviedb.org/3
 
-## Learn More
+- axios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- react-router-dom
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- react-icons
 
-### Code Splitting
+- react-youtube
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- movie-trailer
 
-### Analyzing the Bundle Size
+# How to set up the project on your local machine:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repository to your local machine.
 
-### Making a Progressive Web App
+2. Navigate into the root folder of the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Run "npm install" to install the node modules.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Run "npm start" to start the project on http://localhost:3000/

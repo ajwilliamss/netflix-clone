@@ -1,0 +1,66 @@
+$lightFont: #ffffff;
+$darkFont: #999999;
+
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  thead th {
+    text-transform: uppercase;
+    padding: 0.8rem;
+  }
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  tbody tr td {
+    color: $darkFont;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+  }
+
+  tbody tr td:first-child {
+    text-align: left;
+  }
+
+  tbody tr:nth-child(odd) {
+    background: #222;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .table {
+    thead {
+      display: none;
+    }
+
+    tbody,
+    tr,
+    td {
+      display: block;
+      width: 100%;
+    }
+
+    td {
+      margin-left: 4rem;
+    }
+
+    td:first-child {
+      margin-left: 0;
+      text-align: center !important;
+    }
+
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 2rem;
+      width: 50%;
+      color: $lightFont;
+    }
+  }
+}

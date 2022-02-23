@@ -1,0 +1,77 @@
+$lightFont: #ffffff;
+$buttonColour: #e50914;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5rem;
+
+  img {
+    width: 200px;
+  }
+
+  button {
+    background: $buttonColour;
+    color: $lightFont;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    img {
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    margin: 0 3rem;
+    button {
+      display: none;
+    }
+
+    img {
+      margin-top: 0.6rem;
+      width: 100px;
+    }
+
+    .mobile-menu {
+      display: flex;
+      align-items: center;
+      ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        left: 45%;
+        width: 100%;
+        font-weight: bold;
+      }
+      li a:hover {
+        color: $buttonColour;
+        transition: 0.5s ease;
+      }
+    }
+
+    .hamburger {
+      position: absolute;
+      top: 1.75rem;
+      right: 3rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

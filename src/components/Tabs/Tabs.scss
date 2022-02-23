@@ -1,0 +1,158 @@
+$lightFont: #ffffff;
+$darkFont: #999999;
+$red: #e50914;
+
+.tabs {
+  color: $darkFont;
+  background: #141414;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+  border-right: none;
+
+  .tabs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+  }
+
+  .tabs-container > div {
+    padding: 1.5rem 0;
+
+    &:hover {
+      color: $lightFont;
+      cursor: pointer;
+    }
+  }
+
+  .tab-underline {
+    border-bottom: $red 4px solid;
+  }
+}
+
+.tab-content {
+  padding: 3rem 0;
+  background: #000;
+  color: $lightFont;
+
+  .tab-content-container {
+    max-width: 70%;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .tab1-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tab1-text,
+  .tab2-text,
+  .tab3-text {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    display: inline-block;
+    background: $red;
+    color: $lightFont;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+
+  .tab2-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab2-content-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .tab2-md {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-dark {
+    color: $darkFont;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .tabs {
+    .tabs-container {
+      max-width: 90%;
+    }
+  }
+  .tab-content {
+    .tab1-text {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .tab2-md {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tab-content {
+    .tab1-content-wrapper {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .tab2-content-top {
+      display: block;
+      text-align: center;
+    }
+
+    .tab2-content-bottom {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+  }
+}

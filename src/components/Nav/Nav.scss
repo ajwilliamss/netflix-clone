@@ -1,0 +1,74 @@
+.netflix-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.25rem 2.5rem;
+  z-index: 99;
+  transition: all 0.5s;
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2rem;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .netflix-nav-logo {
+    width: 125px;
+  }
+
+  .netflix-nav-list {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .netflix-nav-link a:hover {
+    color: #d3d3d3;
+    transition: 0.2s ease-in;
+  }
+
+  .mobile-nav-title {
+    display: none;
+  }
+
+  .mobile-icon {
+    cursor: pointer;
+    display: none;
+  }
+
+  .netflix-nav-avatar {
+    width: 45px;
+    border-radius: 5px;
+  }
+}
+
+.netflix-nav-fill {
+  background-color: #111111;
+}
+
+@media screen and (max-width: 960px) {
+  .netflix-nav {
+    padding: 0;
+    .netflix-nav-list {
+      display: none;
+    }
+
+    .mobile-nav-title {
+      display: flex;
+      color: #fff;
+    }
+
+    .mobile-icon {
+      display: flex;
+      position: relative;
+      right: 1rem;
+      top: 0.1rem;
+    }
+  }
+}
