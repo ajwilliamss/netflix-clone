@@ -60,9 +60,11 @@ $buttonColour: #e50914;
 }
 
 @media screen and (max-width: 1160px) {
-  .header-content {
-    h1 {
-      margin-top: 6rem;
+  .header {
+    .header-content {
+      h1 {
+        margin-top: 6rem;
+      }
     }
   }
 }
@@ -123,20 +125,22 @@ $buttonColour: #e50914;
 }
 
 @media screen and (max-width: 500px) {
-  .header-content {
-    h1 {
-      font-size: 2rem;
-      line-height: 1;
-      margin-top: 2.5rem;
-    }
+  .header {
+    .header-content {
+      h1 {
+        font-size: 2rem;
+        line-height: 1;
+        margin-top: 2.5rem;
+      }
 
-    p {
-      font-size: 1rem;
-    }
+      p {
+        font-size: 1rem;
+      }
 
-    button {
-      font-size: 0.75rem;
-      padding: 1rem 1.25rem;
+      button {
+        font-size: 0.75rem;
+        padding: 1rem 1.25rem;
+      }
     }
   }
 }
