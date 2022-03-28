@@ -14,7 +14,7 @@ The register form implements form validation.
 
 # View the site here:
 
-[Netlify Link](https://ajwilliams-netflix-clone.netlify.app/)
+https://ajwilliams-netflix-clone.netlify.app/
 
 # How to use the app:
 
